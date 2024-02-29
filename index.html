@@ -28,10 +28,11 @@
 
         h1 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 80px;
+            font-size: 60px;
             text-align: center;
             transition: background-color 0.8s, color 0.8s;
-            color: rgb(0, 161, 81)
+            color: rgb(0, 161, 81);
+            width: 400px;
         }
 
         h2,
@@ -46,12 +47,37 @@
             color: rgb(236, 29, 29);
             list-style-type: none;
         }
+
+        .h1-animation {
+            animation: textAnimation 10s infinite, colorChange 3s infinite
+        }
+
+        @keyframes textAnimation {
+            to {
+                transform: translateX(100%);
+
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: red
+            }
+
+            50% {
+                color: blue
+            }
+
+            100% {
+                color: green
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    <h1>Pokemons are the best </h1>
+    <h1 class="h1-animation">Pokemons are the best!!! </h1>
     <div class="container">
         <img class="photo" src="/img/pokemon.jpg" alt="" width="200px" height="200px">
     </div>
