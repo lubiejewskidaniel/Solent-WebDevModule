@@ -21,7 +21,6 @@
             background-color: blanchedalmond;
             margin: 30px;
             padding: 0;
-            text-align: left;
         }
 
         .photo {
@@ -34,6 +33,15 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 0 80px black;
+        }
+
+        .welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100vw;
+            overflow: hidden;
+
         }
 
         h1 {
@@ -59,13 +67,16 @@
         }
 
         .h1-animation {
-            animation: textAnimation 10s infinite, colorChange 3s infinite
+            animation: textAnimation 10s linear infinite, colorChange 3s infinite
         }
 
         @keyframes textAnimation {
-            to {
-                transform: translateX(100%);
+            0% {
+                transform: translateX(0%) rotate(0deg);
+            }
 
+            100% {
+                transform: translateX(0%) rotate(360deg);
             }
         }
 
@@ -87,9 +98,11 @@
 </head>
 
 <body>
-    <h1 class="h1-animation">Pokemons are the best!!! </h1>
+    <div class="welcome">
+        <h1 class="h1-animation">Pokemons are the best!!! </h1>
+    </div>
     <div class="container">
-        <img class="photo" src="/img/pokemon.jpg" alt="" width="200px" height="200px">
+        <img class="photo" src="/Week1/img/pokemon.jpg" alt="" width="200px" height="200px">
     </div>
 
 
