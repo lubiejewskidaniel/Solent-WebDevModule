@@ -6,6 +6,7 @@ body {
 	color: rgba(112, 230, 122, 0.658);
 	font-family: "PT Sans", sans-serif;
 	letter-spacing: 1px;
+	padding: 5px;
 }
 .banner {
 	display: flex;
