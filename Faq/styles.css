@@ -1,5 +1,5 @@
 :root {
-	--green: #38ccae;
+	--green: #686daf;
 	--dark: #1b1b1b;
 }
 
@@ -23,15 +23,17 @@ body {
 h1 {
 	font-family: "Courier New", Courier, monospace;
 	position: absolute;
-	top: 10%;
+	top: 8%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
+	color: rgb(187, 198, 228);
 	z-index: 2;
 	text-decoration: underline;
 }
 
 .container {
+	min-height: 300px; /* Minimalna wysokość kontenera, aby uniknąć zbyt małego kontenera */
+	max-height: 90vh;
 	width: 66%;
 	height: 66%;
 	background: rgba(0, 0, 0, 0.75);
@@ -92,6 +94,7 @@ h1 {
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 	justify-content: Left;
+	overflow: auto;
 }
 
 #cont1 a {
@@ -125,6 +128,7 @@ h1 {
 	display: flex;
 	font-size: 30px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	flex-grow: 1;
 }
 
 @keyframes slideDown {
