@@ -28,6 +28,7 @@ h1 {
 	transform: translate(-50%, -50%);
 	color: white;
 	z-index: 2;
+	text-decoration: underline;
 }
 
 .container {
@@ -90,6 +91,16 @@ h1 {
 	position: relative;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
+	justify-content: Left;
+}
+
+#cont1 a {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	margin: 40px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	justify-content: space-between;
 }
 
 #cont2 {
@@ -106,6 +117,14 @@ h1 {
 	position: flex;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
+	display: flex; /* Ustawienie kontenera na flexbox */
+	justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
+	align-items: center; /* Wyśrodkowanie zawartości w pionie */
+	color: white;
+	padding: 20px;
+	display: flex;
+	font-size: 30px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 @keyframes slideDown {
