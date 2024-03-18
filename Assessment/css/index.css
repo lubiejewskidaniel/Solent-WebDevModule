@@ -34,8 +34,6 @@ header {
 	position: absolute;
 	left: 10px;
 	top: 50%;
-	animation: rotateLogo 8s linear infinite;
-	/* Added animation */
 }
 
 nav ul {
@@ -84,27 +82,20 @@ nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	transition: color 0.3s ease, font-size 0.3s ease;
-	/* Added font-size transition */
 	font-size: 18px;
-	/* Initial font size */
 	padding: 5px 10px;
-	/* Add padding to create space around the text */
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-	/* Adjust for selected state */
 	color: #ff6600;
 	font-size: 20px;
-	/* Expanded font size */
 	background: radial-gradient(
 		ellipse at center,
 		rgba(255, 255, 255, 0.3) 0%,
 		rgba(255, 255, 255, 0) 70%
 	);
-	/* Elliptical gradient */
 	border-radius: 50%;
-	/* Makes the background elliptical */
 }
 
 .tile {

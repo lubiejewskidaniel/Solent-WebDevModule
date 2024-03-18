@@ -1,0 +1,123 @@
+/* For phones */
+@media only screen and (max-width: 600px) {
+	.container .content {
+		width: 80vw;
+	}
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	.container .content {
+		width: 60vw;
+	}
+}
+
+/* For TVs */
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+	.container .content {
+		width: 40vw;
+	}
+}
+
+/* For computers */
+@media only screen and (min-width: 1921px) {
+	.container .content {
+		width: 30vw;
+	}
+}
+
+:root {
+	--green: #1d8a0e;
+	--dark: #1b1b1b;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: var(--green);
+	background: linear-gradient(to right top, var(--dark), var(--green));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-image: url("/Assessment/images/rave.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: rgb(4, 124, 58);
+	text-decoration: underline;
+	margin-top: 20px; /* Adjusted to keep it 20px above .container */
+}
+
+.container {
+	color: white;
+	text-align: center;
+	width: 30vw;
+	min-width: 300px;
+	max-width: 600px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group textarea,
+.form-group select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-group textarea {
+	height: 100px;
+}
+
+.form-group input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+	background-color: #0056b3;
+}
