@@ -1,18 +1,26 @@
-// JavaScript code here
-let slider = document.querySelector(".slider");
-let slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
-let slideWidth = slides[0].offsetWidth;
+document.addEventListener("DOMContentLoaded", function () {
+	let currentSlide = 0;
+	const slides = document.querySelectorAll(".slide");
+	const totalSlides = slides.length;
 
-function goToSlide(index) {
-	slider.style.transform = `translateX(-${slideWidth * index}px)`;
-	currentSlide = index;
-}
+	function showSlide(n) {
+		slides.forEach((slide) => (slide.style.display = "none"));
+		slides[n].style.display = "block";
+		slides[n].style.animation = "slideIn 10s forwards";
+	}
 
-function nextSlide() {
-	currentSlide = (currentSlide + 1) % slides.length;
-	goToSlide(currentSlide);
-}
+	function nextSlide() {
+		currentSlide = (currentSlide + 1) % totalSlides;
+		showSlide(currentSlide);
+	}
 
-// Auto slide functionality
-setInterval(nextSlide, 5000);
+	function prevSlide() {
+		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+		showSlide(currentSlide);
+	}
+
+	showSlide(currentSlide);
+
+	setInterval(nextSlide, 10000);
+	transition;
+});

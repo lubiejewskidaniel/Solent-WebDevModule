@@ -1,14 +1,42 @@
 .slider-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
+	height: calc(100vh - 120px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .slider {
-	display: flex;
-	transition: transform 2.8s ease;
+	width: 30%;
+	overflow: hidden;
+	border-radius: 30px;
+}
+
+.slider .slide {
+	display: none;
+}
+
+.slider .slide img {
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(100%);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 .slide {
-	min-width: 100%;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
 }
