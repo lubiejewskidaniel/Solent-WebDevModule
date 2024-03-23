@@ -104,7 +104,7 @@ nav ul li a:focus {
 	height: 25vh;
 	width: 25vw;
 	padding: 20px;
-	margin: 20px;
+	margin: 30px;
 	border-radius: 10px;
 	text-align: center;
 	transition: transform 2s ease;
@@ -135,6 +135,7 @@ nav ul li a:focus {
 
 .tile:hover {
 	transform: rotateY(180deg);
+	background-color: rgba(175, 165, 165, 0.664);
 }
 
 .tile:hover h2 {
@@ -147,6 +148,7 @@ nav ul li a:focus {
 
 .tile:hover p {
 	transform: rotateY(-180deg);
+	color: #333;
 }
 
 .tile .btn:hover {
