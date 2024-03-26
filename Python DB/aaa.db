@@ -1,1 +1,0 @@
-CREATE TABLE cz_rodziny (id INT, name STRING, ln STRING, age INT)
