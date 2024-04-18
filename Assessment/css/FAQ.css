@@ -29,10 +29,11 @@ h1 {
 	color: rgb(205, 214, 238);
 	z-index: 2;
 	text-decoration: underline;
+	text-align: center;
 }
 
 .container {
-	min-height: 300px; /* Minimalna wysokość kontenera, aby uniknąć zbyt małego kontenera */
+	min-height: 300px;
 	max-height: 90vh;
 	width: 66%;
 	height: 66%;
@@ -120,15 +121,16 @@ h1 {
 	position: flex;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	display: flex; /* Ustawienie kontenera na flexbox */
-	justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
-	align-items: center; /* Wyśrodkowanie zawartości w pionie */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: white;
 	padding: 20px;
 	display: flex;
-	font-size: 30px;
+	font-size: 20px;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	flex-grow: 1;
+	overflow: auto;
 }
 
 @keyframes slideDown {
