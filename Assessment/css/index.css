@@ -14,7 +14,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
-	position: absolute;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -64,7 +64,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.952);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
