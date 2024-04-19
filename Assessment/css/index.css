@@ -14,7 +14,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
-	flex-direction: column;
+	position: absolute;
 	justify-content: space-between;
 }
 
